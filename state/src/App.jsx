@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Person from './Person'
 
 const COLORS = ['pink', 'green', 'blue', 'yellow', 'purple'];
 
@@ -17,6 +18,8 @@ function App() {
   }
 
   return (
+    <>
+    <Person />
     <div
       className="App"
       style={{
@@ -38,6 +41,7 @@ function App() {
         </button>
       ))}
     </div>
+    </>
   );
 }
 
